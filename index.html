@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		.img-wrap {
+			margin: 20px auto;
+			width: 360px;
+			height: 640px;
+			overflow: hidden;
+		}
+		.img-wrap img {
+			will-change: transform;
+			height: 640px;
+			transition: transform 4980ms linear;
+			transform: translateX(0);
+		}
+		.img-wrap img:hover {
+			transform: translateX(calc(-100% + 360px));
+		}
+	</style>
+	<div class="img-wrap">
+		<img src="./out001.png" alt="">	
+	</div>
+</body>
+</html>
